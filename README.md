@@ -1,36 +1,32 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Clon de Instagram con Next.js
 
-## Getting Started
+## Descripción
 
-First, run the development server:
+Este proyecto es un clon de Instagram desarrollado utilizando Next.js. Proporciona una interfaz de usuario similar a la de Instagram, permitiendo a los usuarios registrarse, iniciar sesión, subir fotos, seguir a otros usuarios y mucho más.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Características
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Registro de usuarios
+- Inicio de sesión de usuarios
+- Subida de fotos
+- Seguimiento de otros usuarios
+- Interacción con publicaciones (me gusta, comentarios)
+- Exploración de publicaciones populares
+- Perfiles de usuario personalizados
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Tecnologías utilizadas
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- Next.js: un framework de React para construir aplicaciones web del lado del servidor.
+- Firebase: una plataforma de desarrollo de aplicaciones en la nube que proporciona servicios de backend como autenticación y almacenamiento de datos.
 
-## Learn More
+## Instalación
 
-To learn more about Next.js, take a look at the following resources:
+1. Clona este repositorio en tu máquina local.
+2. Abre una terminal en la carpeta raíz del proyecto.
+3. Ejecuta el siguiente comando para instalar las dependencias:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```bash
+   npm install
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+   npm run dev
+   ```

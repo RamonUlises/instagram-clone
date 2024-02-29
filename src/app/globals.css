@@ -2,32 +2,56 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+* {
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@media screen and (width < 768px) {
+  .mainGrid {
+    display: grid;
+    grid-template-areas:
+      "header"
+      "main"
+      "nav";
+    grid-template-columns: 100%;
+    grid-template-rows: auto 1fr auto;
   }
 }
-
-body {
-  color: rgb(var(--foreground-rgb));
+@media screen and ((width >= 768px) and (width < 1264px)) {
+  .mainGrid {
+    display: grid;
+    grid-template-areas:
+      "nav main";
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr;
+  } 
+}
+@media screen and (width >= 1264px) {
+  .mainGrid {
+    display: grid;
+    grid-template-areas:
+      "nav main";
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: 1fr;
+  }
+}
+.header {
+  grid-area: header;
+}
+.main {
+  grid-area: main;
+  overflow: auto;
+}
+.nav {
+  grid-area: nav;
+}
+.fondCard {
   background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+    90deg,
+    rgb(155, 194, 1) 0%,
+    rgb(219, 0, 91) 20%,
+    rgb(151, 0, 18) 40%,
+    rgb(225, 0, 255) 60%,
+    rgb(60, 0, 123) 100%
+  );
 }
