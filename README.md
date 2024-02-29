@@ -27,4 +27,7 @@ Este proyecto es un clon de Instagram desarrollado utilizando Next.js. Proporcio
 
 ```bash
    npm install
+```
+```bash
    npm run dev
+```
